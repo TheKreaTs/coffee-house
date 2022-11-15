@@ -53,7 +53,7 @@ body{background:#111}
 .main-section{height:1270px}
 .main-section_img{width:100%;position:absolute;top:0;filter:brightness(62%);z-index:-1}
 .main-section_img-mobl{display:none}
-.main-section_box{z-index:2;width:1900px;padding:50px 280px 0 280px}
+.main-section_box{z-index:2;width:1900px;padding:50px 280px 0 802px}
 .main-section_box2{width:962px;height:482px;position:absolute;top:350px;left:25%;display:flex;flex-direction:column;align-items:center}
 .main-section_box2 img{margin-bottom:24px}
 .main-section_box2 h1{font-size:96px;color:#fff;margin-bottom:24px;font-family:Inter-Bold,serif}
@@ -62,7 +62,7 @@ body{background:#111}
 .button{width:215px;height:48px;color:#fff;background:0 0;border:1px solid #fff;font-family:Inter-Bold,serif;transition-duration:.2s}
 .button:hover{background-color:rgba(0,0,0,.58)}
 .button1{display:none}
-.nav_name{color:#fff;font-family:Inter-Regular,serif}
+.nav_name{position:absolute;left:281px;width:130px;color:#fff;font-family:Inter-Regular,serif}
 .second-section{height:600px;background:#fff}
 .second-section_img{position:absolute;left:240px}
 .second-section_img2{display:none}
@@ -156,6 +156,7 @@ body{background:#111}
 .hamburger_active span:nth-child(2){display:none}
 .hamburger_active span:nth-child(3){transform:translateY(3px) rotate(45deg)}
 .nav-menu_active{display:block;right:0}
+.nav_name{left:7%}
 .main-section{height:1032px;overflow:hidden}
 .main-section_img{display:none}
 .main-section_img-mobl{display:block;z-index:-1;position:absolute;top:0;filter:brightness(62%)}
