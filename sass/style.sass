@@ -14,36 +14,42 @@
   font-display: swap
   src: url(../fonts/Inter-Regular.ttf)
 
+body
+  background: #111111
+
 .container
   max-width: 1920px
   margin: 0 auto
   position: relative
 
+.nav-menu
+  color: white
+  display: flex
+  align-items: center
+  justify-content: space-between
+  a
+    margin-right: 40px
+    text-decoration: none
+    color: white
+    font-family: Inter-Regular, serif
+    &:last-child
+      margin-right: 0
+  &_logo
+    display: none
+    font-family: Inter-Regular, serif
+
 .main-section
-  height: 1280.250px
-  background-position: center
-  background-size: cover
-  background-repeat: no-repeat
+  height: 1270px
   &_img
     width: 100%
-    z-index: -1
     position: absolute
     top: 0
     filter: brightness(62%)
-  &_nav
-    color: white
-    display: flex
-    align-items: center
-    justify-content: space-between
-    z-index: 10
-    a
-      margin-right: 40px
-      text-decoration: none
-      color: white
-      font-family: Inter-Regular, serif
-      &:last-child
-        margin-right: 0
+    z-index: -1
+  &_img-mobl
+    display: none
   &_box
+    z-index: 2
     width: 1900px
     padding: 50px 280px 0 280px
   &_box2
@@ -62,41 +68,52 @@
       color: white
       margin-bottom: 24px
       font-family: Inter-Bold, serif
-    p
+    &_txt
       font-size: 32px
       color: white
       text-align: center
       margin-bottom: 48px
       font-family: Inter-Regular, serif
       line-height: 40px
-    button
-      width: 215px
-      height: 48px
-      color: white
-      background: none
-      border: 1px solid #ffffff
-      font-family: Inter-Bold, serif
-      transition-duration: 0.2s
-      &:hover
-        background-color: rgba(0, 0, 0, 0.58)
+    &_mobl-txt
+      display: none
+
+.button
+  width: 215px
+  height: 48px
+  color: white
+  background: none
+  border: 1px solid #ffffff
+  font-family: Inter-Bold, serif
+  transition-duration: 0.2s
+  &:hover
+    background-color: rgba(0, 0, 0, 0.58)
+
+.button1
+  display: none
 
 .nav_name
-  margin-right: 425px
+  color: #FFFFFF
   font-family: Inter-Regular, serif
 
 .second-section
   height: 600px
-  img
+  background: #FFFFFF
+  &_img
     position: absolute
     left: 240px
+  &_img2
+    display: none
 
 .third-section
   max-height: 432px
   background-position: center
   background-size: cover
   background-repeat: no-repeat
-  img
+  &_img
     width: 1900px
+  &_img2
+    display: none
   &_box
     padding-top: 105px
     position: absolute
@@ -130,11 +147,15 @@
       transition-duration: 0.2s
       &:hover
         background-color: rgba(0, 0, 0, 0.58)
+  &_br
+    display: none
 
 .four-section
   height: 912px
   background: #eeeeee
   padding-top: 96px
+  &_card3
+    display: none
   &_box
     position: absolute
     left: 698px
@@ -288,6 +309,8 @@
     font-family: Inter-Regular, serif
     line-height: 24px
     margin-bottom: 24px
+  &_br2
+    display: none
 
 .seven-section
   height: 815px
@@ -419,3 +442,337 @@
       margin-right: 26px
       &:last-child
         margin-right: 0
+
+@media ( max-width: 575px)
+  .container
+    width: 100%
+
+  .nav-menu
+    position: fixed
+    right: -100%
+    top: 0
+    height: 101%
+    width: 100%
+    background: rgba(17, 17, 17, 0.95)
+    z-index: 20
+    transition: 0.4s all
+    padding-left: 7%
+    padding-top: 50px
+    opacity: 0.9
+    &_logo
+      display: block
+      margin-bottom: 80px
+    a
+      font-size: 24px
+      margin-right: 0
+      margin-bottom: 48px
+    &_exile
+      display: flex
+      flex-direction: column
+      padding-left: 14%
+
+  .hamburger
+    width: 20px
+    height: 13px
+    position: absolute
+    top: 51px
+    right: 7%
+    z-index: 30
+    span
+      height: 1px
+      width: 90%
+      display: block
+      background: white
+      margin-bottom: 4px
+      transition: 0.4s all
+      &:last-child
+        margin-bottom: 0
+  .hamburger_active
+    top: 51px
+    position: fixed
+    span
+      margin-bottom: -1px
+      &:nth-child(1)
+        transform: translateY(3px) rotate(-45deg)
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        transform: translateY(3px) rotate(45deg)
+  .nav-menu_active
+    display: block
+    right: 0
+
+  .main-section
+    height: 1032px
+    overflow: hidden
+    &_img
+      display: none
+    &_img-mobl
+      display: block
+      z-index: -1
+      position: absolute
+      top: 0
+      filter: brightness(62%)
+    &_box
+      padding-left: 7%
+      padding-top: 48px
+      padding-right: 7%
+      width: 100%
+    &_box2
+      width: 86%
+      height: 362.82px
+      left: 7%
+      top: 24%
+      img
+        width: 28%
+      h1
+        font-size: 30px
+        line-height: 96px
+      &_txt
+        display: none
+      &_mobl-txt
+        display: block
+        font-size: 24px
+        line-height: 48px
+        font-family: Inter-Regular, serif
+        color: #FFFFFF
+        text-align: center
+        margin-bottom: 48px
+  .button
+    display: none
+  .button1
+    display: block
+    width: 58%
+    height: 48px
+    position: absolute
+    top: 75%
+    left: 21%
+    color: white
+    background: none
+    border: 1px solid #ffffff
+    font-family: Inter-Bold, serif
+    transition-duration: 0.2s
+    &:hover
+      background-color: rgba(0, 0, 0, 0.58)
+
+  .second-section
+    height: 865px
+    overflow: hidden
+    &_img
+      display: none
+    &_img2
+      display: block
+
+
+  .third-section
+    height: 480px
+    &_img
+      display: none
+    &_img2
+      display: block
+      width: 100%
+      height: 100%
+    &_box
+      width: 86%
+      height: 480px
+      left: 7%
+      padding-top: 96px
+      h2
+        font-size: 28px
+        text-align: center
+      hr
+        width: 33%
+      p
+        font-size: 13px
+      button
+        height: 48px
+        width: 56%
+        font-size: 13px
+    &_br
+      display: block
+
+  .four-section
+    height: 1000px
+    &_card
+      display: none
+    &_card2
+      display: none
+    &_card3
+      display: block
+      img
+        width: 100%
+    &_br
+      display: none
+    &_box
+      width: 86%
+      height: 144px
+      left: 7%
+      margin-bottom: 0
+      h3
+        font-size: 28px
+        margin-bottom: 16px
+      hr
+        width: 33%
+      p
+        font-size: 13px
+    &_menu
+      height: 640px
+      width: 86%
+      left: 7%
+      top: 288px
+      &_one
+        position: absolute
+        left: 28%
+        top: -47px
+      &_two
+        position: absolute
+        left: 54%
+        top: -47px
+      &_hr
+        left: 28%
+        width: 42px
+        top: -36px
+
+  .five-section
+    height: 527px
+    &_img
+      display: none
+    &_img2
+      background-position: center
+      position: absolute
+      width: 100%
+      height: 527px
+      background-image: url("../img/ggggg.jpg")
+      filter: brightness(45%)
+    &_br
+      display: none
+    &_text
+      z-index: 1
+      width: 86%
+      h5
+        font-size: 28px
+      hr
+        width: 33%
+      &_p1
+        font-size: 13px
+      &_p2
+        font-size: 13px
+        margin-bottom: 80px
+      img
+        margin-left: 42%
+        display: flex
+        justify-content: center
+
+  .six-section
+    min-height: 1800px
+    h6
+      font-size: 28px
+    hr
+      width: 33%
+    &_text
+      font-size: 13px
+    &_br
+      display: none
+    &_br2
+      display: block
+    &_box
+      width: 86%
+      min-height: 1500px
+      left: 7%
+    &_card-box
+      width: 100%
+      flex-direction: column
+      justify-content: normal
+      img
+        width: 100%
+      &_card1
+        width: 100%
+        margin-bottom: 48px
+        p
+          font-size: 13px
+      &_card2
+        width: 100%
+        margin-bottom: 48px
+        p
+          font-size: 13px
+      &_card3
+        width: 100%
+        p
+          font-size: 13px
+
+  .seven-section
+    padding-left: 0
+    padding-right: 0
+    height: 1580px
+    overflow: hidden
+    &_img
+      width: 828%
+    h6
+      font-size: 28px
+    hr
+      width: 33%
+    &_text
+      font-size: 13px
+    &_box
+      width: 100%
+      justify-content: normal
+      flex-direction: column
+      padding-left: 23%
+      &_card1
+        width: 70%
+      &_card2
+        width: 70%
+      &_card3
+        width: 70%
+    &_img-cards
+      width: 100%
+      margin-bottom: 10px
+    &_cards-title
+      font-size: 16px
+      margin-bottom: 10px
+    &_cards-text
+      font-size: 13px
+      margin-bottom: 48px
+    &_br
+      display: none
+
+  .eight-section
+    height: 390px
+    padding: 78px 0 0 0
+    overflow: hidden
+    h6
+      font-size: 28px
+    hr
+      width: 33%
+    p
+      font-size: 13px
+      padding-left: 7%
+      padding-right: 7%
+    &_email
+      padding-left: 8%
+      width: 92%
+    label
+      width: 48%
+      input
+        font-size: 13px
+        height: 42px
+        padding-left: 14px
+        width: 110%
+    button
+      height: 42px
+      font-size: 13px
+      width: 42%
+
+  .footer
+    height: 119px
+    //overflow: hidden
+    padding: 48px 7% 0 7%
+    &_exile
+      display: none
+    &_txt
+      p
+        font-size: 10px
+        margin-right: 0
+    &_icons
+      a
+        margin-right: 15px

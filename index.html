@@ -4,54 +4,69 @@
     <meta charset="UTF-8">
     <meta name="description" content="Здесь не должно быть описания">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Coffee Roasters</title>
+    <title>Coffee House</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="icons/favicon.png" />
     <link rel="apple-touch-icon" href="icons/favicon-apple.png"/>
 </head>
 <body>
     <section id="home" class="main-section container">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="main-section_box">
-            <nav class="main-section_nav">
-                <p class="nav_name">COFFEE HOUSE</p>
-                <a href="#home">HOME</a>
-                <a href="#whyus">WHY US</a>
-                <a href="#menu">MENU</a>
-                <a href="#clients">HAPPY CLIENTS</a>
-                <a href="#blog">BLOG</a>
-                <a href="#location">OUR LOCATION</a>
-                <a href="#newsletter">NEWSLETTER</a>
+            <p class="nav_name">COFFEE HOUSE</p>
+            <nav class="nav-menu">
+                <p class="nav-menu_logo">COFFEE HOUSE</p>
+                <div class="nav-menu_exile">
+                    <a href="#home">HOME</a>
+                    <a href="#whyus">WHY US</a>
+                    <a href="#menu">MENU</a>
+                    <a href="#clients">HAPPY CLIENTS</a>
+                    <a href="#blog">BLOG</a>
+                    <a href="#location">OUR LOCATION</a>
+                    <a href="#newsletter">NEWSLETTER</a>
+                </div>
             </nav>
         </div>
         <img class="main-section_img" src="img/1-img.jpg" alt="">
+        <img class="main-section_img-mobl" src="img/imgonline-com-ua-converta9d5BGWLlLCi.jpg" alt="">
         <div class="main-section_box2">
             <img src="icons/Group%201.png" alt="#">
             <h1>The Coffee Roasters</h1>
-            <p>We source our coffee seasonally, from farmers<br> who care, and roast to highlight what makes them<br> special.</p>
-            <button class="button button1">
+            <p class="main-section_box2_txt">We source our coffee seasonally, from farmers<br> who care, and roast to highlight what makes them<br> special.</p>
+            <p class="main-section_box2_mobl-txt">We source our coffee seasonally, from farmers who care, and roast to highlight what makes them special.</p>
+            <button class="button">
                 VIEW OUR MENU
             </button>
         </div>
+        <button class="button1">
+            VIEW OUR MENU
+        </button>
     </section>
     <section id="whyus" class="second-section container">
-        <img src="img/product%20features.jpg" alt="вторя секция">
+        <img class="second-section_img" src="img/product%20features.jpg" alt="вторя секция">
+        <img class="second-section_img2" src="img/product%20features.png" alt="вторя секция">
     </section>
     <section class="third-section container">
         <div class="third-section_box">
-            <h2>Looking for a fresh coffee?</h2>
+            <h2>Looking for a<br class="third-section_br"> fresh coffee?</h2>
             <hr>
             <p>Come drink a coffee with us on<br> Fleet Street,  Chancery Lane or Milkwood Road!</p>
             <button>
                 BOOK A TABLE
             </button>
         </div>
-        <img src="img/cta.jpg"  alt="3section">
+        <img class="third-section_img" src="img/cta.jpg"  alt="3section">
+        <img  class="third-section_img2" src="img/cta2.jpg"  alt="3section">
     </section>
     <section id="menu" class="four-section container">
         <div class="four-section_box">
             <h3>Explore our menu</h3>
             <hr>
-            <p>Available all day! We can not guarantee our foods are allergen-<br> free. Service charge not included.</p>
+            <p>Available all day! We can not guarantee our foods are allergen-<br class="four-section_br">free. Service charge not included.</p>
         </div>
         <div class="four-section_menu">
             <p class="four-section_menu_one">FOOD</p>
@@ -63,15 +78,19 @@
             <div class="four-section_card2">
                 <img src="img/Frame%209.png" alt="menu2">
             </div>
+            <div class="four-section_card3">
+                <img src="img/Frame%2033.png" alt="menu3">
+            </div>
         </div>
     </section>
     <section id="clients" class="five-section container">
         <div class="five-section_img"></div>
+        <div class="five-section_img2"></div>
         <div class="five-section_text">
             <h5>Testimonials</h5>
             <hr>
-            <p class="five-section_text_p1">I had a cup of iced coffee, which was perfect size for me. Not too big. The cup is stylish with slim<br> design. The iced coffee was perfect for a warm day like today.
-                <br> The caffe is clean and welcoming.</p>
+            <p class="five-section_text_p1">I had a cup of iced coffee, which was perfect size for me. Not too big. The cup is stylish with slim<br class="five-section_br"> design. The iced coffee was perfect for a warm day like today.
+                <br class="five-section_br"> The caffe is clean and welcoming.</p>
             <p class="five-section_text_p2">Chiho Sharp, local expert</p>
             <img src="img/nav.png" alt="кнопки">
         </div>
@@ -79,7 +98,7 @@
     <section id="blog" class="six-section container">
         <h6>News</h6>
         <hr>
-        <p class="six-section_text">Stay updated on all the latest Coffee House products, events<br> & community news.</p>
+        <p class="six-section_text">Stay updated on all the latest Coffee House products,<br class="six-section_br2"> events<br class="six-section_br"> & community news.</p>
         <div class="six-section_box">
             <div class="six-section_card-box">
                 <div class="six-section_card-box_card1">
@@ -112,17 +131,17 @@
             <div class="seven-section_box_card1">
                 <img class="seven-section_img-cards" src="img/Ellipse%206.png" alt="">
                 <p class="seven-section_cards-title">Fleet Street Press</p>
-                <p class="seven-section_cards-text">Mon - Sun:  10:00 - 00:00<br> 3 Fleet Street, London EC4Y 1AU</p>
+                <p class="seven-section_cards-text">Mon - Sun:  10:00 - 00:00<br class="seven-section_br"> 3 Fleet Street, London EC4Y 1AU</p>
             </div>
             <div class="seven-section_box_card2">
                 <img class="seven-section_img-cards" src="img/Ellipse%206-1.png" alt="">
                 <p class="seven-section_cards-title">Chancery Press</p>
-                <p class="seven-section_cards-text">Mon - Sun:  10:00 - 00:00<br> 81 Chancery Lane, London WC2A<br> 1DD</p>
+                <p class="seven-section_cards-text">Mon - Sun:  10:00 - 00:00<br class="seven-section_br"> 81 Chancery Lane, London WC2A<br class="seven-section_br"> 1DD</p>
             </div>
             <div class="seven-section_box_card3">
                 <img class="seven-section_img-cards" src="img/Ellipse%206-2.png" alt="">
                 <p class="seven-section_cards-title">SHOREDITCH</p>
-                <p class="seven-section_cards-text">Mon - Sun:  10:00 - 00:00<br> Unit 15, Stone Trading Estate<br> Milkwood Road, Herne Hill<br> SE24 0JU</p>
+                <p class="seven-section_cards-text">Mon - Sun:  10:00 - 00:00<br class="seven-section_br"> Unit 15, Stone Trading Estate<br class="seven-section_br"> Milkwood Road, Herne Hill<br class="seven-section_br"> SE24 0JU</p>
             </div>
         </div>
     </section>
